@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pixel Art Maker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<table class="hidden"></table>
+
+<div id="control_panel">
+  <div>
+  <input type="range" id="grid_size" name="grid_size"
+         min="5" max="65">
+  <label for="grid_size">Grid Size</label>
+  </div>
+  
+  <button id="update">Create Grid</button>
+  <button id="border_toggle">Toggle Border</button>
+  <button id="erase_toggle">Toggle Eraser: Off </button>
+
+  <div>
+  <label for="pickColor">Color Picker:</label>
+  <input type="color" id="pickColor" name="pickColor" value="#ff0000">
+  </div>
+
+  
+  <div id="recent">
+    <h3>Recently Used Colors: </h3> 
+    <button id="clear_recents"> Clear </button>
+    <div id="colors">
+    </div>
+    
+  </div>
+  
+</div>
+  
+  
+</html>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
